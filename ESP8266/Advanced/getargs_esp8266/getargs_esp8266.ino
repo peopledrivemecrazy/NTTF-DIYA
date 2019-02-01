@@ -34,7 +34,7 @@ void getArgs() {
     message += " " + server.argName(i) + ": " + server.arg(i) + "\n";
     analogWrite(ledpins[i],server.arg(i).toInt());
   }
-  server.send(404, "text/plain", message);
+  server.send(200, "text/plain", message);
 }
 
 
